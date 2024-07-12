@@ -1,0 +1,27 @@
+#cta-btn-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 2em;
+}
+#cta-btn {
+  padding: 1em 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: black;
+  color: aliceblue;
+  box-shadow: 0cqw 5px 20px black;
+}
+#btn-info {
+  background-color: black;
+  padding: 0.6em;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px black;
+}

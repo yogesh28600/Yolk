@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  --logo-font: "Rubik Bubbles", system-ui;
+  --bg-color: #f9f5f6;
+  --text-color: aliceblue;
+  --Font-1: "Bebas Neue", sans-serif;
+  --Font-2: "Fjalla One", sans-serif;
+}
+#about-team {
+  font-family: var(--Font-2);
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  position: relative;
+  padding-inline: 4em;
+  gap: 1em;
+  overflow: hidden;
+}
+#about-team h1 {
+  padding-block: 2em;
+  text-align: center;
+}
+#team-container {
+  display: flex;
+  gap: 2em;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#team {
+  width: 14em;
+  border-style: solid;
+  padding: 1em 1em;
+}
+#team-img-container {
+  width: 95%;
+  height: 12em;
+  background-color: black;
+}
+#team-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+}
+#team-info h1 {
+  padding: 0;
+}
