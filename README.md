@@ -2,17 +2,17 @@
 
 ## Design Brief
 
-# Company Name:
+### Company Name:
 
 Yolk
 
-# Company Description:
+### Company Description:
 
 We are a company that makes and distributes comic books. They stand out because they
 are cheap and available in your local shops. Our target audience is seniors. We want to
 convey a sense of bravery, while at the same time being old-fashioned.
 
-# Job Description
+### Job Description
 
 You must create a website that will mainly provide customer support for the company.
 The goal is to make it clear what the company does. Besides the landing page, the
