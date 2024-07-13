@@ -63,3 +63,17 @@
   text-decoration: none;
   color: black;
 }
+.terms-btn {
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  border-radius: 8px;
+  font-family: var(--text-font);
+  border: none;
+  background: none;
+  font-size: inherit;
+  cursor: pointer;
+}
+.terms-btn:hover {
+  color: aliceblue;
+  background-color: black;
+}

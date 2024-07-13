@@ -3,7 +3,10 @@ import gsap from "gsap";
 import "./Nav.css";
 import { IoMenu } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
-const Nav = () => {
+interface Props {
+  setModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Nav = ({ setModal }: Props) => {
   useGSAP(() => {
     gsap.from("#nav-bar", {
       y: "-200%",
@@ -15,9 +18,9 @@ const Nav = () => {
     <nav id="nav-bar" className="flex-space-between">
       <div className="brand">
         <h2 id="brand-name">
-          <a href="#hero" className="link-style">
+          <NavLink to="/" className="link-style">
             Yolk
-          </a>
+          </NavLink>
         </h2>
       </div>
       <a id="menu-icon">
@@ -35,9 +38,14 @@ const Nav = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/terms" className="link-style">
+          <button
+            className="terms-btn"
+            onClick={() => {
+              setModal(true);
+            }}
+          >
             Terms
-          </NavLink>
+          </button>
         </li>
       </ul>
     </nav>

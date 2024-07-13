@@ -6,18 +6,24 @@ import CallToAction from "../../components/cta/CallToAction";
 import AboutTeam from "../../components/about-team/AboutTeam";
 import team from "../../Data/team";
 import HeroImg from "../../assets/images/hero-img.jpg";
+import { useState } from "react";
+import TermsComp from "../../components/terms/TermsComp";
+import TermsOfService from "../../Data/TermsOfService";
 
 const LandingPage = () => {
+  const [openModal, setModal] = useState<boolean>(false);
   const Headline = "Unleash Your Inner Hero: Yolk’s Affordable Comics Await!";
   const Subheading = "Unleash Your Inner Hero: Yolk’s Affordable Comics Await!";
   return (
-    <>
-      <Nav />
+    <main className={openModal ? "disable-scroll" : ""}>
+      {openModal && <div className="overlay"></div>}
+      <Nav setModal={setModal} />
       <Hero headline={Headline} subheadline={Subheading} image={HeroImg} />
+      {openModal && <TermsComp terms={TermsOfService} closeModal={setModal} />}
       <ValueProposition />
       <AboutTeam employees={team} />
       <CallToAction />
-    </>
+    </main>
   );
 };
 
