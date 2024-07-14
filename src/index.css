@@ -1,3 +1,20 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
+
+/* Variables */
+:root {
+  --brand-font: "Rubik Bubbles", system-ui;
+  --bg-color: #f9f5f6;
+  --text-color: black;
+  --hover-text-color: aliceblue;
+  --heading-Font: "Bebas Neue", sans-serif;
+  --paragraph-Font: "Fjalla One", sans-serif;
+  --shadow: 0px 5px 20px black;
+}
+
+/* Resetter */
 * {
   margin: 0;
   padding: 0;
@@ -5,4 +22,29 @@
 }
 html::-webkit-scrollbar {
   display: none;
+}
+
+/* Global Styles */
+.reset-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.reset-list {
+  list-style: none;
+}
+.reset-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.nav-btn {
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  border-radius: 8px;
+  font-family: var(--heading-Font);
+  font-size: inherit;
+}
+.nav-btn:hover {
+  color: var(--hover-text-color);
+  background-color: var(--text-color);
 }

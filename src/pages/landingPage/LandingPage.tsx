@@ -4,7 +4,6 @@ import Hero from "../../components/hero/Hero";
 import ValueProposition from "../../components/value-proposition/ValueProposition";
 import CallToAction from "../../components/cta/CallToAction";
 import AboutTeam from "../../components/about-team/AboutTeam";
-import team from "../../Data/team";
 import HeroImg from "../../assets/images/hero-img.jpg";
 import { useState } from "react";
 import TermsComp from "../../components/terms/TermsComp";
@@ -21,7 +20,7 @@ const LandingPage = () => {
       <Hero headline={Headline} subheadline={Subheading} image={HeroImg} />
       {openModal && <TermsComp terms={TermsOfService} closeModal={setModal} />}
       <ValueProposition />
-      <AboutTeam employees={team} />
+      <AboutTeam />
       <CallToAction />
     </main>
   );

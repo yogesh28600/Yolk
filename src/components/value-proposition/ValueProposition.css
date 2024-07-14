@@ -1,13 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
-:root {
-  --logo-font: "Rubik Bubbles", system-ui;
-  --bg-color: #f9f5f6;
-  --text-color: aliceblue;
-  --Font-1: "Bebas Neue", sans-serif;
-  --Font-2: "Fjalla One", sans-serif;
-}
 #value-proposition {
   background-color: var(--bg-color);
   height: 100vh;
@@ -25,7 +15,7 @@
   border-radius: 40px;
 }
 #img-container {
-  background-color: black;
+  background-color: var(--text-color);
   overflow: hidden;
 }
 #img-container img {

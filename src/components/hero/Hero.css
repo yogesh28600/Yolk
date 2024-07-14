@@ -1,15 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
-:root {
-  --logo-font: "Rubik Bubbles", system-ui;
-  --bg-color: #f9f5f6;
-  --text-color: aliceblue;
-  --Font-1: "Bebas Neue", sans-serif;
-  --Font-2: "Fjalla One", sans-serif;
-}
 #hero {
-  font-family: var(--Font-2);
+  font-family: var(--paragraph-Font);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +12,7 @@
   padding-top: 3em;
 }
 #hero-img-container {
-  background-color: black;
+  background-color: var(--text-color);
   height: 60%;
   width: 100%;
   border-radius: 20px;

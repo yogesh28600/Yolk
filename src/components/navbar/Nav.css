@@ -1,11 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
-:root {
-  --brand-font: "Rubik Bubbles", system-ui;
-  --text-font: "Bebas Neue", sans-serif;
-}
 #brand-name {
-  cursor: pointer;
   font-family: var(--brand-font);
 }
 .flex-space-between {
@@ -14,7 +7,6 @@
   align-items: center;
 }
 #nav-bar {
-  font-family: var(--text-font);
   width: 100%;
   padding-inline: 4em;
   padding-block: 0.5em;
@@ -27,19 +19,6 @@
   height: 100%;
   width: auto;
   gap: 2em;
-}
-#nav-items li {
-  list-style: none;
-  cursor: pointer;
-}
-#nav-items li a {
-  padding-inline: 1em;
-  padding-block: 0.5em;
-  border-radius: 8px;
-}
-#nav-items li a:hover {
-  color: aliceblue;
-  background-color: black;
 }
 #menu-icon {
   display: none;
@@ -58,22 +37,4 @@
   #nav-bar {
     padding-right: 20px;
   }
-}
-.link-style {
-  text-decoration: none;
-  color: black;
-}
-.terms-btn {
-  padding-inline: 1em;
-  padding-block: 0.5em;
-  border-radius: 8px;
-  font-family: var(--text-font);
-  border: none;
-  background: none;
-  font-size: inherit;
-  cursor: pointer;
-}
-.terms-btn:hover {
-  color: aliceblue;
-  background-color: black;
 }

@@ -18,7 +18,7 @@ const Nav = ({ setModal }: Props) => {
     <nav id="nav-bar" className="flex-space-between">
       <div className="brand">
         <h2 id="brand-name">
-          <NavLink to="/" className="link-style">
+          <NavLink to="/" className="reset-link">
             Yolk
           </NavLink>
         </h2>
@@ -26,20 +26,20 @@ const Nav = ({ setModal }: Props) => {
       <a id="menu-icon">
         <IoMenu size={25} />
       </a>
-      <ul id="nav-items" className="flex-space-between">
+      <ul id="nav-items" className="flex-space-between reset-list">
         <li>
-          <NavLink to="shop" className="link-style">
+          <NavLink to="shop" className="reset-link nav-btn">
             Shop
           </NavLink>
         </li>
         <li>
-          <NavLink to="about" className="link-style">
+          <NavLink to="about" className="reset-link nav-btn">
             About
           </NavLink>
         </li>
         <li>
           <button
-            className="terms-btn"
+            className="reset-button nav-btn"
             onClick={() => {
               setModal(true);
             }}
