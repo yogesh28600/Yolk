@@ -1,17 +1,19 @@
 .card-container {
   height: 14em;
   width: 10em;
-  background-color: aqua;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   gap: 1em;
+  font-family: var(--paragraph-Font);
 }
 .image-container {
   width: 100%;
   height: 50%;
   overflow: hidden;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .image-container img {
   object-fit: fill;
@@ -23,13 +25,8 @@
   align-items: center;
   padding-inline: 0.5em;
 }
-.info-container h5 {
-  margin-bottom: 0.5em;
-  font-family: var(--Font-2);
-}
 .info-container h6 {
-  font-family: var(--Font-1);
-  color: green;
+  margin-bottom: 1em;
 }
 .footer {
   display: flex;

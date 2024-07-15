@@ -9,7 +9,7 @@
   gap: 3em;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
+  justify-content: start;
   padding-inline: 2em;
 }
 .cart {

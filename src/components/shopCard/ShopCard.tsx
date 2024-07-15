@@ -1,26 +1,31 @@
 import "./ShopCard.css";
-import comicCover from "../../assets/images/comic-book.jpg";
 import Item from "../../types/Item";
-import { CartStore } from "../../stores/CartStore";
+import { useStore } from "../../stores/store";
+import { CartItem } from "../../types/CartItem";
 interface Props {
   item: Item;
 }
 const ShopCard = ({ item }: Props) => {
-  const cart = new CartStore();
+  const { cartStore } = useStore();
+  const cartItem: CartItem = {
+    ...item,
+    quantity: 1,
+    totalPrice: item.price,
+  };
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={comicCover} alt="" />
+        <img src={item.image} alt="" />
       </div>
       <div className="info-container">
-        <h5>{item.title}</h5>
-        <h6>Price: RS {item.price}</h6>
+        <h6>{item.title}</h6>
+        <h5>Price: RS {item.price}</h5>
       </div>
       <div className="footer">
         <button
-          className="add btn"
+          className="btn"
           onClick={() => {
-            cart.AddItem(item);
+            cartStore.AddItem(cartItem);
           }}
         >
           Add to Cart

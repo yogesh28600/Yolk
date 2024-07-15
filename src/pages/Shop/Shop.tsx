@@ -1,16 +1,15 @@
 import ShopCard from "../../components/shopCard/ShopCard";
 import "./Shop.css";
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import Cart from "../../components/cart/Cart";
 import { useStore } from "../../stores/store";
+import { useState } from "react";
 
 //Props
 interface ShopNavProps {
   openCart: React.Dispatch<React.SetStateAction<boolean>>;
 }
-
 //sub-Componets
 const ShopNav = ({ openCart }: ShopNavProps) => {
   return (
@@ -45,17 +44,17 @@ const ShopNav = ({ openCart }: ShopNavProps) => {
 
 //Main Component
 const Shop = () => {
-  const [cartModal, setCartModal] = useState<boolean>(false);
   const { shopStore } = useStore();
+  const [openCart, setOpenCart] = useState<boolean>(false);
   return (
     <main id="shop">
-      <ShopNav openCart={setCartModal} />
+      <ShopNav openCart={setOpenCart} />
       <div className="items-container">
         {shopStore.items.map((item) => {
           return <ShopCard key={item.id} item={item} />;
         })}
       </div>
-      {cartModal && <Cart />}
+      {openCart && <Cart openCart={setOpenCart} />}
     </main>
   );
 };
