@@ -1,7 +1,7 @@
 import { Button, Container } from "react-bootstrap";
 import { useStore } from "../../stores/store";
 import { observer } from "mobx-react-lite";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Product from "../../components/product/Product";
 
@@ -37,9 +37,9 @@ const Cart = () => {
       ) : (
         <>
           <h2>No Items in the Cart</h2>
-          <NavLink to="shop" className="btn btn-warning">
+          <Link to="/shop" className="btn btn-warning">
             Continue Shoping
-          </NavLink>
+          </Link>
         </>
       )}
     </Container>
