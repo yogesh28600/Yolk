@@ -1,4 +1,4 @@
-import { Button, Container, Navbar, NavbarBrand } from "react-bootstrap";
+import { Container, Navbar, NavbarBrand } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { SiShopee } from "react-icons/si";
 import { useGSAP } from "@gsap/react";
@@ -74,7 +74,6 @@ const NavigationMenu = () => {
               </Container>
             </Container>
           </NavLink>
-          <Button>Terms</Button>
           <NavLink to="cart" className="btn btn-secondary position-relative">
             <FaShoppingCart />
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">

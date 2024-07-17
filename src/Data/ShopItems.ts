@@ -15,6 +15,55 @@ const ShopItems: Item[] = [
     title: "Batman Comic",
     price: 400,
   },
+  {
+    id: 3,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 4,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 5,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 6,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 7,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 8,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
+  {
+    id: 9,
+    image:
+      "https://th.bing.com/th?id=OIP.44cnC48-rNh2MMc4zI5NCAHaLY&w=201&h=309&c=8&rs=1&qlt=90&o=6&dpr=1.6&pid=3.1&rm=2",
+    title: "Shadow",
+    price: 600,
+  },
 ];
 
 export default ShopItems;
