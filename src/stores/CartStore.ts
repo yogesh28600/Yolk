@@ -3,6 +3,7 @@ import { CartItem } from "../types/CartItem";
 
 export class CartStore {
   items: CartItem[] = [];
+  totalItems: number = 0;
   total: number = 0;
   constructor() {
     makeAutoObservable(this);
@@ -16,12 +17,16 @@ export class CartStore {
     this.items.forEach((item) => (price += item.totalPrice));
     return price;
   }
+  setTotalItems() {
+    this.totalItems = this.items.length;
+  }
   changeQuantity(id: number, qty: number) {
-    const idx: number = this.items.findIndex((value) => value.id === id);
-    this.items[idx].quantity = qty;
-    console.log(this.items[idx].quantity);
-    this.items[idx].totalPrice = this.items[idx].price * qty;
-    this.total = this.calculateTotal();
+    if (qty >= 1) {
+      const idx: number = this.items.findIndex((value) => value.id === id);
+      this.items[idx].quantity = qty;
+      this.items[idx].totalPrice = this.items[idx].price * qty;
+      this.total = this.calculateTotal();
+    }
   }
   AddItem(item: CartItem) {
     const cartitem: CartItem | null = this.GetItem(item.id);
@@ -31,12 +36,13 @@ export class CartStore {
     } else {
       this.items = [...this.items, item];
       this.total += item.price;
+      this.setTotalItems();
     }
   }
   RemoveItem(id: number): void {
     const idx = this.items.findIndex((item) => item.id === id);
-    // this.total -= this.items[idx].totalPrice;
     this.items.splice(idx, 1);
     this.total = this.calculateTotal();
+    this.setTotalItems();
   }
 }

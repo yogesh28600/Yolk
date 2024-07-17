@@ -1,52 +1,17 @@
-/* Imports */
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* Variables */
-:root {
-  --brand-font: "Rubik Bubbles", system-ui;
-  --bg-color: #f9f5f6;
-  --text-color: black;
-  --hover-text-color: aliceblue;
-  --heading-Font: "Bebas Neue", sans-serif;
-  --paragraph-Font: "Fjalla One", sans-serif;
-  --shadow: 0px 5px 20px black;
-  --cart-Font: "Poppins", sans-serif;
-}
-
-/* Resetter */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 html::-webkit-scrollbar {
   display: none;
 }
+body {
+  overflow-x: hidden;
+}
+.hero-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: bolder;
+  font-size: 4rem;
+}
 
-/* Global Styles */
-.reset-link {
-  text-decoration: none;
-  color: var(--text-color);
-}
-.reset-list {
-  list-style: none;
-}
-.reset-button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-.nav-btn {
-  padding-inline: 1em;
-  padding-block: 0.5em;
-  border-radius: 8px;
-  font-family: var(--heading-Font);
-  font-size: inherit;
-}
-.nav-btn:hover {
-  color: var(--hover-text-color);
-  background-color: var(--text-color);
+.bg {
+  background-color: rgb(194, 194, 232);
 }
